@@ -1,0 +1,61 @@
+
+Security!*[System[(EventID=4660)]]
+Security!*[System[(EventID=4657 or EventID=4670)]]
+Security!(*[System[EventID=4656]] and ((*[EventData[Data[@Name='ObjectType']='Key']]))) or (*[System[EventID=4663]] and ((*[EventData[Data[@Name='ObjectType']='Key']])))
+Mitre Active-directory Events
+
+Security!*[System[(EventID=5136 or EventID=5139)]]
+Security!*[System[(EventID=5137)]]
+Security!*[System[(EventID=5141)]]
+Security!*[System[(EventID=4661 or EventID=4662)]]
+Security!*[System[(EventID=4768 or EventID=4769)]]
+
+
+Mitre File Activity
+
+Security!*[System[(EventID=4660)]]
+Security!(*[System[EventID=4656]] and ((*[EventData[Data[@Name='ObjectType']='File']]))) or (*[System[EventID=4663]] and ((*[EventData[Data[@Name='ObjectType']='File']]))) or (*[System[EventID=4661]] and ((*[EventData[Data[@Name='ObjectType']='SAM']])))
+Security!*[System[(EventID=4670)]]
+
+Mitre Windows Firewall
+
+Security!*[System[(EventID=5025)]]
+Security!*[System[(EventID=4947 or EventID=4948 or EventID=4946)]]
+
+Mitre Login Session 
+
+Security!*[System[(EventID=4778 or EventID=4964)]]
+
+Mitre Network Share Activty 
+
+Security!*[System[(EventID=5140 or EventID=5145)]]
+
+Mitre Network Tracking
+
+Security!*[System[(EventID=5156 or EventID=5159 or EventID=5157 or EventID=5155 or EventID=5031 or EventID=5154 or EventID=5158)]]
+
+Mitre Process Tracking
+
+Security!*[System[(EventID=4688)]]
+Security!(*[System[EventID=4663]] and ((*[EventData[Data[@Name='ObjectType']='Process']]))) or (*[System[EventID=4656]] and ((*[EventData[Data[@Name='ObjectType']='Process']])))
+Security!*[System[(EventID=4689)]]
+
+Mitre Scheduled Job/Task Monitoring
+
+Security!*[System[(EventID=4698)]]
+Security!*[System[(EventID=4702 or EventID=4700 or EventID=4701)]]
+
+Mitre Service Monitoring 
+
+Security!*[System[(EventID=4697)]]
+
+
+Mitre User Account Monitoring
+
+Security!*[System[(EventID=4738 or EventID=4781 or EventID=4740 or EventID=4767 or EventID=4722 or EventID=4717 or EventID=4718 or EventID=4725)]]
+Security!*[System[(EventID=4625 or EventID=4648)]]
+Security!*[System[(EventID=4726)]]
+Security!*[System[(EventID=4720)]]	
+
+
+
